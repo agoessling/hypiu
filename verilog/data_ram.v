@@ -6,7 +6,7 @@ module data_ram(
   input ebit
 );
 
-reg [7:0] ram [0:65535];
+reg [7:0] ram[0:65535];
 wire [15:0] read_data;
 
 initial begin
