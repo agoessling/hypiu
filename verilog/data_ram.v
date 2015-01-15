@@ -13,7 +13,7 @@ initial begin
   $readmemh("data_ram.list", ram);
 end
 
-assign read_data = ebit ? {8'b0,ram[addr]} : {ram[addr+1],ram[addr]};
+assign read_data = ebit ? {8'b0, ram[addr]} : {ram[addr+1], ram[addr]};
 assign data = read_en_n ? 16'bZ : read_data;
 
 always @ (posedge write_en_n)

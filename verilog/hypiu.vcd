@@ -1,0 +1,802 @@
+$date
+	Fri Jan  2 22:07:07 2015
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module hypiu $end
+$var wire 3 ! addr_a [2:0] $end
+$var wire 3 " addr_b [2:0] $end
+$var wire 3 # addr_d [2:0] $end
+$var wire 3 $ addr_w [2:0] $end
+$var wire 4 % alu_oper [3:0] $end
+$var wire 16 & bus_a [15:0] $end
+$var wire 16 ' bus_b [15:0] $end
+$var wire 16 ( bus_d [15:0] $end
+$var wire 16 ) bus_w [15:0] $end
+$var wire 1 * en_a $end
+$var wire 1 + en_b $end
+$var wire 1 , en_d $end
+$var wire 1 - en_w $end
+$var wire 16 . pc_addr [15:0] $end
+$var wire 1 / pc_load_en $end
+$var wire 1 0 z_flag $end
+$var reg 1 1 clk $end
+$scope module register_file_inst $end
+$var wire 3 2 addr_a [2:0] $end
+$var wire 3 3 addr_b [2:0] $end
+$var wire 3 4 addr_d [2:0] $end
+$var wire 3 5 addr_w [2:0] $end
+$var wire 16 6 bus_a [15:0] $end
+$var wire 16 7 bus_b [15:0] $end
+$var wire 16 8 bus_d [15:0] $end
+$var wire 16 9 bus_w [15:0] $end
+$var wire 1 : clk $end
+$var wire 1 * en_a $end
+$var wire 1 + en_b $end
+$var wire 1 , en_d $end
+$var wire 1 - en_w $end
+$var wire 1 ; reset $end
+$var integer 32 < i [31:0] $end
+$upscope $end
+$scope module alu_inst $end
+$var wire 16 = a [15:0] $end
+$var wire 16 > b [15:0] $end
+$var wire 1 : clk $end
+$var wire 4 ? oper [3:0] $end
+$var reg 16 @ result [15:0] $end
+$var reg 1 A zero $end
+$upscope $end
+$scope module program_counter_inst $end
+$var wire 1 : clk $end
+$var wire 16 B load_addr [15:0] $end
+$var wire 1 / load_en $end
+$var reg 16 C pc_addr [15:0] $end
+$upscope $end
+$scope module program_control_inst $end
+$var wire 16 D bus_b [15:0] $end
+$var wire 16 E bus_d [15:0] $end
+$var wire 24 F data [23:0] $end
+$var wire 12 G immediate [11:0] $end
+$var wire 6 H opcode [5:0] $end
+$var wire 3 I operand_1 [2:0] $end
+$var wire 3 J operand_2 [2:0] $end
+$var wire 16 K pc [15:0] $end
+$var wire 3 L result [2:0] $end
+$var wire 1 0 z_flag $end
+$var reg 3 M addr_a [2:0] $end
+$var reg 3 N addr_b [2:0] $end
+$var reg 3 O addr_d [2:0] $end
+$var reg 3 P addr_w [2:0] $end
+$var reg 4 Q alu_oper [3:0] $end
+$var reg 16 R bus_b_reg [15:0] $end
+$var reg 16 S bus_d_reg [15:0] $end
+$var reg 1 T en_a $end
+$var reg 1 U en_b $end
+$var reg 1 V en_d $end
+$var reg 1 W en_w $end
+$var reg 1 X pc_load_en $end
+$scope module pr $end
+$var wire 16 Y addr [15:0] $end
+$var wire 24 Z data [23:0] $end
+$var wire 1 [ read_en_n $end
+$var wire 1 \ write_en_n $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1\
+0[
+b10101010 Z
+b0 Y
+0X
+1W
+0V
+0U
+0T
+bz S
+b10101010 R
+b10 Q
+b0 P
+b0 O
+b0 N
+b0 M
+b0 L
+b0 K
+b0 J
+b0 I
+b0 H
+b10101010 G
+b10101010 F
+bz E
+b10101010 D
+b0 C
+b10101010 B
+0A
+b10101010 @
+b10 ?
+b10101010 >
+bz =
+b1000 <
+0;
+0:
+b10101010 9
+bz 8
+b10101010 7
+bz 6
+b0 5
+b0 4
+b0 3
+b0 2
+01
+00
+0/
+b0 .
+1-
+0,
+0+
+0*
+b10101010 )
+bz (
+b10101010 '
+bz &
+b10 %
+b0 $
+b0 #
+b0 "
+b0 !
+$end
+#5
+b10101011 @
+b10101011 )
+b10101011 9
+b10101011 B
+b1 P
+b1 $
+b1 5
+b10101011 R
+b10101011 '
+b10101011 7
+b10101011 >
+b10101011 D
+1W
+1-
+b10101011 G
+b1 L
+b1 C
+b1000000010101011 F
+b1000000010101011 Z
+b1 .
+b1 K
+b1 Y
+11
+1:
+#10
+01
+0:
+#15
+b10101100 @
+b10101100 )
+b10101100 9
+b10101100 B
+b10101100 R
+b10101100 '
+b10101100 7
+b10101100 >
+b10101100 D
+1W
+1-
+b10 P
+b10 $
+b10 5
+b10101100 G
+b10 L
+b10 C
+b10000000010101100 F
+b10000000010101100 Z
+b10 .
+b10 K
+b10 Y
+11
+1:
+#20
+01
+0:
+#25
+b10101101 @
+b10101101 )
+b10101101 9
+b10101101 B
+b10101101 R
+b10101101 '
+b10101101 7
+b10101101 >
+b10101101 D
+1W
+1-
+b11 P
+b11 $
+b11 5
+b10101101 G
+b11 L
+b11 C
+b11000000010101101 F
+b11000000010101101 Z
+b11 .
+b11 K
+b11 Y
+11
+1:
+#30
+01
+0:
+#35
+b10101110 @
+b10101110 )
+b10101110 9
+b10101110 B
+b10101110 R
+b10101110 '
+b10101110 7
+b10101110 >
+b10101110 D
+1W
+1-
+b100 P
+b100 $
+b100 5
+b10101110 G
+b100 L
+b100 C
+b100000000010101110 F
+b100000000010101110 Z
+b100 .
+b100 K
+b100 Y
+11
+1:
+#40
+01
+0:
+#45
+b10101111 @
+b10101111 )
+b10101111 9
+b10101111 B
+b10101111 R
+b10101111 '
+b10101111 7
+b10101111 >
+b10101111 D
+1W
+1-
+b101 P
+b101 $
+b101 5
+b10101111 G
+b101 L
+b101 C
+b101000000010101111 F
+b101000000010101111 Z
+b101 .
+b101 K
+b101 Y
+11
+1:
+#50
+01
+0:
+#55
+b10111010 @
+b10111010 )
+b10111010 9
+b10111010 B
+b10111010 R
+b10111010 '
+b10111010 7
+b10111010 >
+b10111010 D
+1W
+1-
+b110 P
+b110 $
+b110 5
+b10111010 G
+b110 L
+b110 C
+b110000000010111010 F
+b110000000010111010 Z
+b110 .
+b110 K
+b110 Y
+11
+1:
+#60
+01
+0:
+#65
+b10111011 @
+b10111011 )
+b10111011 9
+b10111011 B
+b10111011 R
+b10111011 '
+b10111011 7
+b10111011 >
+b10111011 D
+1W
+1-
+b111 P
+b111 $
+b111 5
+b10111011 G
+b111 L
+b111 C
+b111000000010111011 F
+b111000000010111011 Z
+b111 .
+b111 K
+b111 Y
+11
+1:
+#70
+01
+0:
+#75
+bz @
+bz )
+bz 9
+bz B
+bz R
+bz '
+bz 7
+bz >
+bz D
+0W
+0-
+b0 P
+b0 $
+b0 5
+bx G
+bx J
+bx I
+bx L
+bx H
+b1000 C
+bx F
+bx Z
+b1000 .
+b1000 K
+b1000 Y
+11
+1:
+#80
+01
+0:
+#85
+xA
+x0
+b1001 C
+b1001 .
+b1001 K
+b1001 Y
+11
+1:
+#90
+01
+0:
+#95
+b1010 C
+b1010 .
+b1010 K
+b1010 Y
+11
+1:
+#100
+01
+0:
+#105
+b1011 C
+b1011 .
+b1011 K
+b1011 Y
+11
+1:
+#110
+01
+0:
+#115
+b1100 C
+b1100 .
+b1100 K
+b1100 Y
+11
+1:
+#120
+01
+0:
+#125
+b1101 C
+b1101 .
+b1101 K
+b1101 Y
+11
+1:
+#130
+01
+0:
+#135
+b1110 C
+b1110 .
+b1110 K
+b1110 Y
+11
+1:
+#140
+01
+0:
+#145
+b1111 C
+b1111 .
+b1111 K
+b1111 Y
+11
+1:
+#150
+01
+0:
+#155
+b10000 C
+b10000 .
+b10000 K
+b10000 Y
+11
+1:
+#160
+01
+0:
+#165
+b10001 C
+b10001 .
+b10001 K
+b10001 Y
+11
+1:
+#170
+01
+0:
+#175
+b10010 C
+b10010 .
+b10010 K
+b10010 Y
+11
+1:
+#180
+01
+0:
+#185
+b10011 C
+b10011 .
+b10011 K
+b10011 Y
+11
+1:
+#190
+01
+0:
+#195
+b10100 C
+b10100 .
+b10100 K
+b10100 Y
+11
+1:
+#200
+01
+0:
+#205
+b10101 C
+b10101 .
+b10101 K
+b10101 Y
+11
+1:
+#210
+01
+0:
+#215
+b10110 C
+b10110 .
+b10110 K
+b10110 Y
+11
+1:
+#220
+01
+0:
+#225
+b10111 C
+b10111 .
+b10111 K
+b10111 Y
+11
+1:
+#230
+01
+0:
+#235
+b11000 C
+b11000 .
+b11000 K
+b11000 Y
+11
+1:
+#240
+01
+0:
+#245
+b11001 C
+b11001 .
+b11001 K
+b11001 Y
+11
+1:
+#250
+01
+0:
+#255
+b11010 C
+b11010 .
+b11010 K
+b11010 Y
+11
+1:
+#260
+01
+0:
+#265
+b11011 C
+b11011 .
+b11011 K
+b11011 Y
+11
+1:
+#270
+01
+0:
+#275
+b11100 C
+b11100 .
+b11100 K
+b11100 Y
+11
+1:
+#280
+01
+0:
+#285
+b11101 C
+b11101 .
+b11101 K
+b11101 Y
+11
+1:
+#290
+01
+0:
+#295
+b11110 C
+b11110 .
+b11110 K
+b11110 Y
+11
+1:
+#300
+01
+0:
+#305
+b11111 C
+b11111 .
+b11111 K
+b11111 Y
+11
+1:
+#310
+01
+0:
+#315
+b100000 C
+b100000 .
+b100000 K
+b100000 Y
+11
+1:
+#320
+01
+0:
+#325
+b100001 C
+b100001 .
+b100001 K
+b100001 Y
+11
+1:
+#330
+01
+0:
+#335
+b100010 C
+b100010 .
+b100010 K
+b100010 Y
+11
+1:
+#340
+01
+0:
+#345
+b100011 C
+b100011 .
+b100011 K
+b100011 Y
+11
+1:
+#350
+01
+0:
+#355
+b100100 C
+b100100 .
+b100100 K
+b100100 Y
+11
+1:
+#360
+01
+0:
+#365
+b100101 C
+b100101 .
+b100101 K
+b100101 Y
+11
+1:
+#370
+01
+0:
+#375
+b100110 C
+b100110 .
+b100110 K
+b100110 Y
+11
+1:
+#380
+01
+0:
+#385
+b100111 C
+b100111 .
+b100111 K
+b100111 Y
+11
+1:
+#390
+01
+0:
+#395
+b101000 C
+b101000 .
+b101000 K
+b101000 Y
+11
+1:
+#400
+01
+0:
+#405
+b101001 C
+b101001 .
+b101001 K
+b101001 Y
+11
+1:
+#410
+01
+0:
+#415
+b101010 C
+b101010 .
+b101010 K
+b101010 Y
+11
+1:
+#420
+01
+0:
+#425
+b101011 C
+b101011 .
+b101011 K
+b101011 Y
+11
+1:
+#430
+01
+0:
+#435
+b101100 C
+b101100 .
+b101100 K
+b101100 Y
+11
+1:
+#440
+01
+0:
+#445
+b101101 C
+b101101 .
+b101101 K
+b101101 Y
+11
+1:
+#450
+01
+0:
+#455
+b101110 C
+b101110 .
+b101110 K
+b101110 Y
+11
+1:
+#460
+01
+0:
+#465
+b101111 C
+b101111 .
+b101111 K
+b101111 Y
+11
+1:
+#470
+01
+0:
+#475
+b110000 C
+b110000 .
+b110000 K
+b110000 Y
+11
+1:
+#480
+01
+0:
+#485
+b110001 C
+b110001 .
+b110001 K
+b110001 Y
+11
+1:
+#490
+01
+0:
+#495
+b110010 C
+b110010 .
+b110010 K
+b110010 Y
+11
+1:
+#500
+01
+0:
